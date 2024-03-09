@@ -1,8 +1,8 @@
-let pai = document.querySelector('.div');
-let filhos = pai.querySelectorAll('p');
+let pai = document.body
+let filhos = document.querySelectorAll('.div');
 
 pai.addEventListener('click', () => {
-    filhos.forEach(p => {
-        pai.removeChild(p)
+    filhos.forEach(div => {
+        div.style.backgroundColor = 'red'
     })
 })
