@@ -1,8 +1,6 @@
 let pai = document.querySelector('.div');
-let filhos = pai.querySelectorAll('p');
+let filhos = document.createElement('h1')
 
 pai.addEventListener('click', () => {
-    filhos.forEach(p => {
-        p.textContent = 'Mudança de texto'
-    })
+    pai.appendChild(filhos)
 })
