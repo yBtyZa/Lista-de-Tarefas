@@ -1,8 +1,6 @@
-let pai = document.body
-let filhos = document.querySelectorAll('.div');
 
-pai.addEventListener('click', () => {
-    filhos.forEach(div => {
-        div.style.backgroundColor = 'red'
-    })
+let div = document.getElementById('div')
+
+div.addEventListener('click', () => {
+    div.setAttribute('class', 'div')
 })
