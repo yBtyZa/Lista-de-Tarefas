@@ -1,5 +1,8 @@
-const div = document.getElementById('div')
+let pai = document.querySelector('.div');
+let filhos = pai.querySelectorAll('p');
 
-div.addEventListener('click', () =>{
-    div.style.backgroundColor = 'yellow'
+pai.addEventListener('click', () => {
+    filhos.forEach(p => {
+        p.textContent = 'Mudança de texto'
+    })
 })
