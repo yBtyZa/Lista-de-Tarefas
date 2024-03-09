@@ -1,6 +1,8 @@
 let pai = document.querySelector('.div');
-let filhos = document.createElement('h1')
+let filhos = pai.querySelectorAll('p');
 
 pai.addEventListener('click', () => {
-    pai.appendChild(filhos)
+    filhos.forEach(p => {
+        pai.removeChild(p)
+    })
 })
