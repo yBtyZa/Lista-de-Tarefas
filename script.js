@@ -1,6 +1,9 @@
 
 let div = document.getElementById('div')
+let img = div.querySelector('img')
 
 div.addEventListener('click', () => {
-    div.removeAttribute('id', 'div')
+        img.setAttribute('src', './mario.png')
+        img.style.width = '50vw'
+        img.style.height = '100vh'
 })
