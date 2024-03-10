@@ -7,12 +7,35 @@
     <title>M01S08</title>
 
     <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="div">
-        <img src="./mario.png" style="width: 50vw; height: 100vh;">
-    </div>
+    <main class="main">
+        <form class="form" id="form">
+            <h4>Lista de tarefas</h4>
+            <label for="">Tarefa:</label>
+            <input type="text" id="tarefaValue">
+            <label for="">Dificuldade:</label>
+            <select name="" id="selectValue">
+                <option value="selecione">Selecione a dificuldade</option>
+                <option value="Difícil">Difícil</option>
+                <option value="Médio">Médio</option>
+                <option value="Fácil">Fácil</option>
+            </select>
+            <button onclick="adicionarTarefa()">Adicionar</button>
+        </form>
+        <div class="table-div">
+            <table id="tableTarefa">
+            </table>
+        </div>
+    </main>
+
     <script src="./script.js"></script>
 </body>
 
